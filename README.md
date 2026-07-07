@@ -30,9 +30,10 @@ pinned: false
 
 ### Selecting a Model
 
-Before you begin, you can select the model that will analyze the images. The General Model is trained on a broad dataset. Fine-tuned models are optimized for specific imaging setups. In addition, you can choose between a faster model and a more accurate model.
+Before you begin, you can select the model that will analyze the images. The General Model is trained on a broad dataset. You can choose between a faster model and a more accurate model.
+Below, you can expand the list of additional models that have been trained and optimized for specific types of photos.
 
-![Model selection option](Documentation_images/screenshot_model_selector_21_05.png)
+![Model selection option](Documentation_images/screenshot_model_list.png)
 
 ### Uploading Images
 
@@ -108,6 +109,7 @@ You can select:
 - **Length/Straight Line Ratio**: The ratio between the actual centerline length and the straight-line distance between endpoints. A value close to 1.0 indicates a nearly straight fish, while higher values indicate more curvature. This metric quantifies body curvature independently of fish size.
 - **Eye Size**: Calculates the eye area in µm² and measures the eye diameter in µm. 
 - **Edema**: Calculates the edema area in µm² .
+- **Swim Bladder**: Calculates the swim bladder area in µm² .
 
 ### Run
 
@@ -127,6 +129,7 @@ The boxplots display:
 - **Length/Straight Line Ratio**: Distribution of the length ratio metric, where values closer to 1.0 indicate straighter fish
 - **Eye Area**: Distribution of calculated eye areas in µm²
 - **Edema Area**: Distribution of calculated edema areas in µm²
+- **Swim Bladder**: Distribution of calculated swim bladder areas in µm²
 
 The ratio visualization helps identify fish with significant body curvature. You can see in the example image that some fish have ratios above 1.0, indicating curved body shapes:
 
@@ -176,7 +179,4 @@ In the field below, you can enter sheet name that will be generated.
 ![Sheet name](Documentation_images/screenshot_sheet_name.png)
 
 When you're ready, press the **Generate Final Excel** button. 
-
-Below will be a button to download the file.
-
-![Download Final Excel](Documentation_images/screenshot_download_excel.png)
+If the download does not start automatically, click the button again.
