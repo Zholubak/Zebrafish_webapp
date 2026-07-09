@@ -77,8 +77,8 @@ def segmentation_pipeline(
     include_swimbladder=False,
     swimbladder_model_path=None,
     swimbladder_repo_id="markdanielarndt/Zebrafish_Segmentation",
-    swimbladder_model_filename="swimmbladder_256_01072026.pth",
-    swimbladder_encoder_name="vgg19",
+    swimbladder_model_filename="best_model_swimmbladder_256_09072026.pth",
+    swimbladder_encoder_name="vgg16",
     swimbladder_model_type="Unet",
 ):
     """

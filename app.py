@@ -35,8 +35,8 @@ MODEL_CACHE = {}  # lazy-loaded cache keyed by model filename
 # None for eye/edema/swimbladder filenames means use the pipeline default
 SEG_MODEL_OPTIONS = {
     "Fast & Easy (256 px, ~2s/image)": ("best_model_body_3400_vgg19.pth", "vgg19", None, 256, None, None, None, None),
-    "Complex & Slower (512 px, ~7s/image)": ("best_model_body_512.pth", "vgg19", "best_model_eye_512.pth", 512, None, "swimmbladder_512_01072026.pth", "vgg16", "FPN"),
-    "Fine-tuned DESY": ("desy_body_512_finetuned.pth", "vgg19", "desy_eye_512_finetuned.pth", 512, "desy_edema_512_finetuned.pth", "swimmbladder_512_01072026.pth", "vgg16", "FPN"),
+    "Complex & Slower (512 px, ~7s/image)": ("best_model_body_512.pth", "vgg19", "best_model_eye_512.pth", 512, None, "best_model_swimmbladder_512_09072026.pth", "vgg19", "FPN"),
+    "Fine-tuned DESY": ("desy_body_512_finetuned.pth", "vgg19", "desy_eye_512_finetuned.pth", 512, "desy_edema_512_finetuned.pth", "best_model_swimmbladder_512_09072026.pth", "vgg19", "FPN"),
 }
 
 def _ensure_model():
